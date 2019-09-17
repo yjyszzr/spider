@@ -1,0 +1,33 @@
+foot_his     足球联赛资料  2017-1-1至2018-4-27  历史信息
+foot_gd      开奖结果
+team_test    通过场次ID获取所有球队ID
+team	     通过球队ID更新球队信息
+oupan        欧赔实时更新
+yapan	     亚盘实时更新
+dl_match_support  支持率实时更新
+dl_league_match_result 赛事结果详情(自动找场次ID)
+match_result      赛事结果详情(根据sql语句找场次ID)
+match_bifen	 更新dl_match后三个字段
+dl_match        包括了dl_match_play和dl_match实时更新
+history      抓取竞彩网所有历史赛果数据
+team_pic       根据team_id获取球队图标,然后将连接转换成我们的链接更新数据库dl_league_team的team_pic
+jcdj		竞彩独家
+foot_image   竞彩图集
+new_image    精彩资讯图片
+full         所有的球队图标
+image_contry  所有的国家球队图标
+gj_game        冠军游戏
+gyj_game        冠亚军游戏
+
+match_future    未来比赛信息
+jc_match        竞彩网赛事资讯
+match_notice    竞彩网公告
+match_future    未来赛事  (半年跑一次)
+match_score     球队积分
+match_lineups   足球阵容阵型
+match_lv         球队赛况
+dl_super_lotto   超级大乐透
+dl_shooter       500万射手榜
+dl_score_5       500万积分榜
+dl_asian_cup     亚洲杯
+

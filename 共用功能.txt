@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+
+
+#今天时间(字符串)
+
+from datetime import datetime
+now = datetime.now()
+now_time = now.strftime('%Y-%m-%d %H:%M:%S')
+
+#数据库
+
+from pymysql import connect
+
+#测试机
+db = connect(host='39.106.18.39', port=3306, user='caixiaomi', password='cxmtest', database='cxm_lottery',charset='utf8')
+
+#正式机
+db = connect(host='172.17.0.100', port=3306, user='cxm_user_rw', password='YNShTBmL1X1X', database='cxm_lottery',charset='utf8')
+cur = db.cursor()
+cur.execute(sql)
+dbs = cur.fetchall()
+db.commit()
+update 表名 set key1=val1,key2=val2 where 条件;
+insert into 表名(字段名) values(值);
+
+日志
+import time
+LOG_FILE = "/a/test_logs/"+time.strftime('%Y-%m-%d')+"-news.log"
+LOG_LEVEL = "WARNING"
+
+xpath:
+item['league_name'] = response.xpath('//li[@class="on"]/a/text()').extract_first().replace('首页','')
+
+区分分组
+https://ews.500.com/library/zq/progress?leagueid=63
+
+区分赛季
+https://ews.500.com/library/zq/baseinfo?leagueid=101
+
+
+赛程:
+https://ews.500.com/library/zq/switch?&stageid=13070&switchid=5&roundtype=round
+
+时间增加一分钟:
+import datetime
+dt = datetime.datetime.strptime('09-14 23:59','%m-%d %H:%M')
+n = (dt + datetime.timedelta(minutes=1)).strftime("%m-%d %M:%S")
+print(type(n))
+
+requests添加浏览器标头
+header={
+"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36"
+}
+
+
+
+

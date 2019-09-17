@@ -1,0 +1,14 @@
+mysql                   json
+support_id              id
+changci_id              mid
+win_num                 win
+lose_num                lose
+draw_num                draw
+pre_win                 pre_win
+pre_lose                pre_lose
+pre_draw                pre_draw
+total                   total
+play_type               hhad=1   had=2
+create_time
+update_time
+

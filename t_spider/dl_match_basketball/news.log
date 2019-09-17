@@ -1,0 +1,1834 @@
+2018-10-11 16:27:08 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四303',
+ 'changci_id': '112084',
+ 'home_team_abbr': '拜仁',
+ 'home_team_id': '194',
+ 'home_team_name': '拜仁慕尼黑',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114303',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 30),
+ 'play_content': {'a': '1.68',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-2.5',
+                  'goalline': '',
+                  'h': '1.81',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501955',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '埃菲斯',
+ 'visiting_team_id': '182',
+ 'visiting_team_name': '伊斯坦布尔埃菲斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:08 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四303',
+ 'changci_id': '112084',
+ 'home_team_abbr': '拜仁',
+ 'home_team_id': '194',
+ 'home_team_name': '拜仁慕尼黑',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114303',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 30),
+ 'play_content': {'a': '1.95',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.58',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501956',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '埃菲斯',
+ 'visiting_team_id': '182',
+ 'visiting_team_name': '伊斯坦布尔埃菲斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:08 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四303',
+ 'changci_id': '112084',
+ 'home_team_abbr': '拜仁',
+ 'home_team_id': '194',
+ 'home_team_name': '拜仁慕尼黑',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114303',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 30),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+160.5',
+                  'goalline': '',
+                  'h': '1.80',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.69',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501958',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '埃菲斯',
+ 'visiting_team_id': '182',
+ 'visiting_team_name': '伊斯坦布尔埃菲斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:08 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四303',
+ 'changci_id': '112084',
+ 'home_team_abbr': '拜仁',
+ 'home_team_id': '194',
+ 'home_team_name': '拜仁慕尼黑',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114303',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 30),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '4.05',
+                  'l2': '4.75',
+                  'l3': '8.90',
+                  'l4': '20.00',
+                  'l5': '39.00',
+                  'l6': '54.00',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501957',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '3.65',
+                  'w2': '4.10',
+                  'w3': '7.25',
+                  'w4': '14.50',
+                  'w5': '23.00',
+                  'w6': '38.00'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '埃菲斯',
+ 'visiting_team_id': '182',
+ 'visiting_team_name': '伊斯坦布尔埃菲斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:08 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五302',
+ 'changci_id': '112079',
+ 'home_team_abbr': '莫希姆基',
+ 'home_team_id': '53',
+ 'home_team_name': '莫斯科希姆基',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125302',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a': '1.75',
+                  'a_trend': '-0.06',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-2.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0.07',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501967',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '奥林匹亚',
+ 'visiting_team_id': '43',
+ 'visiting_team_name': '奥林匹亚科斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五301',
+ 'changci_id': '112078',
+ 'home_team_abbr': '波德戈里',
+ 'home_team_id': '199',
+ 'home_team_name': '波德戈里察未来',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125301',
+ 'match_time': datetime.datetime(2018, 10, 13, 0, 45),
+ 'play_content': {'a': '1.75',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+5.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501963',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '米兰',
+ 'visiting_team_id': '183',
+ 'visiting_team_name': '米兰',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五302',
+ 'changci_id': '112079',
+ 'home_team_abbr': '莫希姆基',
+ 'home_team_id': '53',
+ 'home_team_name': '莫斯科希姆基',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125302',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a': '2.00',
+                  'a_trend': '0.05',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.54',
+                  'h_trend': '-0.04',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501968',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '奥林匹亚',
+ 'visiting_team_id': '43',
+ 'visiting_team_name': '奥林匹亚科斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五302',
+ 'changci_id': '112079',
+ 'home_team_abbr': '莫希姆基',
+ 'home_team_id': '53',
+ 'home_team_name': '莫斯科希姆基',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125302',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+153.5',
+                  'goalline': '',
+                  'h': '1.69',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.80',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501970',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '奥林匹亚',
+ 'visiting_team_id': '43',
+ 'visiting_team_name': '奥林匹亚科斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五302',
+ 'changci_id': '112079',
+ 'home_team_abbr': '莫希姆基',
+ 'home_team_id': '53',
+ 'home_team_name': '莫斯科希姆基',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125302',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '4.15',
+                  'l2': '4.95',
+                  'l3': '9.20',
+                  'l4': '21.00',
+                  'l5': '43.00',
+                  'l6': '56.00',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501969',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '3.60',
+                  'w2': '4.05',
+                  'w3': '7.00',
+                  'w4': '13.50',
+                  'w5': '22.00',
+                  'w6': '34.00'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '奥林匹亚',
+ 'visiting_team_id': '43',
+ 'visiting_team_name': '奥林匹亚科斯',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四302',
+ 'changci_id': '112083',
+ 'home_team_abbr': '帕纳辛纳',
+ 'home_team_id': '62',
+ 'home_team_name': '帕纳辛纳科斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114302',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 0),
+ 'play_content': {'a': '1.81',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-7.5',
+                  'goalline': '',
+                  'h': '1.68',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501951',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '特马卡比',
+ 'visiting_team_id': '55',
+ 'visiting_team_name': '特拉维夫马卡比',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五301',
+ 'changci_id': '112078',
+ 'home_team_abbr': '波德戈里',
+ 'home_team_id': '199',
+ 'home_team_name': '波德戈里察未来',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125301',
+ 'match_time': datetime.datetime(2018, 10, 13, 0, 45),
+ 'play_content': {'a': '1.30',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '2.64',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501964',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '米兰',
+ 'visiting_team_id': '183',
+ 'visiting_team_name': '米兰',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五301',
+ 'changci_id': '112078',
+ 'home_team_abbr': '波德戈里',
+ 'home_team_id': '199',
+ 'home_team_name': '波德戈里察未来',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125301',
+ 'match_time': datetime.datetime(2018, 10, 13, 0, 45),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+158.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.75',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501966',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '米兰',
+ 'visiting_team_id': '183',
+ 'visiting_team_name': '米兰',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五301',
+ 'changci_id': '112078',
+ 'home_team_abbr': '波德戈里',
+ 'home_team_id': '199',
+ 'home_team_name': '波德戈里察未来',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125301',
+ 'match_time': datetime.datetime(2018, 10, 13, 0, 45),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '3.70',
+                  'l2': '3.60',
+                  'l3': '5.35',
+                  'l4': '8.35',
+                  'l5': '14.50',
+                  'l6': '17.00',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501965',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '5.15',
+                  'w2': '7.25',
+                  'w3': '13.00',
+                  'w4': '28.00',
+                  'w5': '60.00',
+                  'w6': '70.00'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '米兰',
+ 'visiting_team_id': '183',
+ 'visiting_team_name': '米兰',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五304',
+ 'changci_id': '112081',
+ 'home_team_abbr': '费内巴切',
+ 'home_team_id': '123',
+ 'home_team_name': '费内巴切',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125304',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 45),
+ 'play_content': {'a': '1.81',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-12.5',
+                  'goalline': '',
+                  'h': '1.68',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501975',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '格兰卡纳',
+ 'visiting_team_id': '38',
+ 'visiting_team_name': '格兰卡纳里亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四302',
+ 'changci_id': '112083',
+ 'home_team_abbr': '帕纳辛纳',
+ 'home_team_id': '62',
+ 'home_team_name': '帕纳辛纳科斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114302',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 0),
+ 'play_content': {'a': '3.60',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.15',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501952',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '特马卡比',
+ 'visiting_team_id': '55',
+ 'visiting_team_name': '特拉维夫马卡比',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:09 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四302',
+ 'changci_id': '112083',
+ 'home_team_abbr': '帕纳辛纳',
+ 'home_team_id': '62',
+ 'home_team_name': '帕纳辛纳科斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114302',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+159.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.75',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501954',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '特马卡比',
+ 'visiting_team_id': '55',
+ 'visiting_team_name': '特拉维夫马卡比',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四302',
+ 'changci_id': '112083',
+ 'home_team_abbr': '帕纳辛纳',
+ 'home_team_id': '62',
+ 'home_team_name': '帕纳辛纳科斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114302',
+ 'match_time': datetime.datetime(2018, 10, 12, 2, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '6.90',
+                  'l2': '10.00',
+                  'l3': '20.00',
+                  'l4': '37.00',
+                  'l5': '80.00',
+                  'l6': '100.0',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501953',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '4.00',
+                  'w2': '3.40',
+                  'w3': '4.40',
+                  'w4': '6.45',
+                  'w5': '10.50',
+                  'w6': '11.00'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '特马卡比',
+ 'visiting_team_id': '55',
+ 'visiting_team_name': '特拉维夫马卡比',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四304',
+ 'changci_id': '112085',
+ 'home_team_abbr': '皇马',
+ 'home_team_id': '34',
+ 'home_team_name': '皇家马德里',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114304',
+ 'match_time': datetime.datetime(2018, 10, 12, 3, 0),
+ 'play_content': {'a': '1.75',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-14.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501959',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '达鲁萨',
+ 'visiting_team_id': '2244',
+ 'visiting_team_name': '达鲁萨发卡',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五304',
+ 'changci_id': '112081',
+ 'home_team_abbr': '费内巴切',
+ 'home_team_id': '123',
+ 'home_team_name': '费内巴切',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125304',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 45),
+ 'play_content': {'a': '5.80',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.025',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501976',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '格兰卡纳',
+ 'visiting_team_id': '38',
+ 'visiting_team_name': '格兰卡纳里亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五304',
+ 'changci_id': '112081',
+ 'home_team_abbr': '费内巴切',
+ 'home_team_id': '123',
+ 'home_team_name': '费内巴切',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125304',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 45),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+156.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.75',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501978',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '格兰卡纳',
+ 'visiting_team_id': '38',
+ 'visiting_team_name': '格兰卡纳里亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五304',
+ 'changci_id': '112081',
+ 'home_team_abbr': '费内巴切',
+ 'home_team_id': '123',
+ 'home_team_name': '费内巴切',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125304',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 45),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '12.00',
+                  'l2': '22.00',
+                  'l3': '50.00',
+                  'l4': '80.00',
+                  'l5': '190.0',
+                  'l6': '220.0',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501977',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '5.25',
+                  'w2': '3.80',
+                  'w3': '3.65',
+                  'w4': '4.50',
+                  'w5': '6.30',
+                  'w6': '5.60'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '格兰卡纳',
+ 'visiting_team_id': '38',
+ 'visiting_team_name': '格兰卡纳里亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五303',
+ 'changci_id': '112080',
+ 'home_team_abbr': '萨基利斯',
+ 'home_team_id': '41',
+ 'home_team_name': '萨尔基利斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125303',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a': '1.75',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '-1.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HDC',
+                  'p_id': '501971',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 1,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '巴斯克',
+ 'visiting_team_id': '33',
+ 'visiting_team_name': '巴斯克尼亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '1' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四304',
+ 'changci_id': '112085',
+ 'home_team_abbr': '皇马',
+ 'home_team_id': '34',
+ 'home_team_name': '皇家马德里',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114304',
+ 'match_time': datetime.datetime(2018, 10, 12, 3, 0),
+ 'play_content': {'a': '6.30',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.01',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501960',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '达鲁萨',
+ 'visiting_team_id': '2244',
+ 'visiting_team_name': '达鲁萨发卡',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四304',
+ 'changci_id': '112085',
+ 'home_team_abbr': '皇马',
+ 'home_team_id': '34',
+ 'home_team_name': '皇家马德里',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114304',
+ 'match_time': datetime.datetime(2018, 10, 12, 3, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+163.5',
+                  'goalline': '',
+                  'h': '1.75',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.75',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501962',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '达鲁萨',
+ 'visiting_team_id': '2244',
+ 'visiting_team_name': '达鲁萨发卡',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周四304',
+ 'changci_id': '112085',
+ 'home_team_abbr': '皇马',
+ 'home_team_id': '34',
+ 'home_team_name': '皇家马德里',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810114304',
+ 'match_time': datetime.datetime(2018, 10, 12, 3, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '14.50',
+                  'l2': '30.00',
+                  'l3': '70.00',
+                  'l4': '110.0',
+                  'l5': '230.0',
+                  'l6': '270.0',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501961',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '6.25',
+                  'w2': '4.05',
+                  'w3': '3.75',
+                  'w4': '4.05',
+                  'w5': '5.55',
+                  'w6': '4.45'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 11, 0, 0),
+ 'visiting_team_abbr': '达鲁萨',
+ 'visiting_team_id': '2244',
+ 'visiting_team_name': '达鲁萨发卡',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五303',
+ 'changci_id': '112080',
+ 'home_team_abbr': '萨基利斯',
+ 'home_team_id': '41',
+ 'home_team_name': '萨尔基利斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125303',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a': '1.87',
+                  'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h': '1.63',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'MNL',
+                  'p_id': '501972',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 2,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '巴斯克',
+ 'visiting_team_id': '33',
+ 'visiting_team_name': '巴斯克尼亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五303',
+ 'changci_id': '112080',
+ 'home_team_abbr': '萨基利斯',
+ 'home_team_id': '41',
+ 'home_team_name': '萨尔基利斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125303',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '+160.5',
+                  'goalline': '',
+                  'h': '1.69',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l': '1.80',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'HILO',
+                  'p_id': '501974',
+                  'p_status': 'Selling',
+                  'single': '0',
+                  'vbt': '0'},
+ 'play_type': 4,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '巴斯克',
+ 'visiting_team_id': '33',
+ 'visiting_team_name': '巴斯克尼亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly
+2018-10-11 16:27:10 [scrapy.core.scraper] ERROR: Error processing {'changci': '周五303',
+ 'changci_id': '112080',
+ 'home_team_abbr': '萨基利斯',
+ 'home_team_id': '41',
+ 'home_team_name': '萨尔基利斯',
+ 'home_team_rank': '',
+ 'is_show': '1',
+ 'league_abbr': '欧篮联',
+ 'league_name': '欧洲篮球联赛',
+ 'match_sn': '201810125303',
+ 'match_time': datetime.datetime(2018, 10, 13, 1, 0),
+ 'play_content': {'a_trend': '0',
+                  'allup': '1',
+                  'cbt': '1',
+                  'd_trend': '0',
+                  'fixedodds': '',
+                  'goalline': '',
+                  'h_trend': '0',
+                  'int': '1',
+                  'l1': '3.95',
+                  'l2': '4.50',
+                  'l3': '8.60',
+                  'l4': '19.00',
+                  'l5': '35.00',
+                  'l6': '52.00',
+                  'l_trend': '0',
+                  'o_type': 'F',
+                  'p_code': 'WNM',
+                  'p_id': '501973',
+                  'p_status': 'Selling',
+                  'single': '1',
+                  'vbt': '0',
+                  'w1': '3.75',
+                  'w2': '4.15',
+                  'w3': '7.50',
+                  'w4': '16.00',
+                  'w5': '25.00',
+                  'w6': '41.00'},
+ 'play_type': 3,
+ 'show_time': datetime.datetime(2018, 10, 12, 0, 0),
+ 'visiting_team_abbr': '巴斯克',
+ 'visiting_team_id': '33',
+ 'visiting_team_name': '巴斯克尼亚',
+ 'visiting_team_rank': ''}
+Traceback (most recent call last):
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 62, in process_item
+    self.cur.execute(sql)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 165, in execute
+    result = self._query(query)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1061, in _read_query_result
+    result.read()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '3' for key 'play_type'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/.virtualenvs/pachong/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/admin/Desktop/spider/t_spider/dl_match_basketball/dl_match_nba/pipelines.py", line 66, in process_item
+    print("play:"+f)
+TypeError: Can't convert 'IntegrityError' object to str implicitly

@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+import os
+import time
+
+
+new_time = time.strftime("%Y-%m-%d")
+os.system("""cd /a/test_logs &&rm -f `ls *.log|egrep -v '({})'`""".format(new_time))
+os.system('cat /dev/null > /a/spider/t_spider/dl_asia/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_bifen/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_clear/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_europe/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_future/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_league/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_lineups/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_live/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_match/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_news/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_rank/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_oldResult/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_score/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_sizeBall/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_support/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_team/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_newResult/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_super/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_match_basketball/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_league_basketball/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_bifen_basketball/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_record_500w/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_player_500/nohup.out')
+os.system('cat /dev/null > /a/spider/t_spider/dl_season_match/nohup.out')
